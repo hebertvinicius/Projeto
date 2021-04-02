@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantinhas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a class="menu" href="index.html">HOME</a>
+            <a class="menu" href="#pag-SOBRE">SOBRE</a>
+            <a class="menu" href="#pag-PRODUTOS">PRODUTOS</a>
+            <a class="menu" href="#pag-ENCOMENDAS">ENCOMENDAS</a>
+        </div>
+    </nav>
+    <header>
+    <img src="img/1.png" alt="banner" width="100%" height="" >
+    </header>
+    
+    <section>
+    <h1 id="pag-SOBRE">Plantas & Sementes</h1>
+        <p id="#pag-SOBRE">Plantas & Sementes trabalha com milhares de produtos, de mudas e sementes a adubos, ferramentas e outros produtos fundamentais para cultivar plantas em casa ou apartamento. 
+        Toda semana novos produtos são acrescentados ao portfólio da empresa, que busca proporcionar comodidade a quem vive em cidades com poucas opções de lojas do ramo.</p>
+    </section>
+    <h2 id="pag-PRODUTOS">Produtos</h2>
+         <p>PRODUTOS PARA CULTIVOS</p>
+    <div id="conteiner">
+        <div class="card">
+                <img  class="icons" src="img/unnamed (2).jpg" width="80%" >
+            <div class="auto-card">
+                <h4>JABUTICABEIRA</h4>
+                <p class="p-1">R$180,00</p>
+            </div>
+        </div>
+        <div class="card">
+                <img class="icons" src="img/unnamed.jpg" >
+            <div class="auto-card">
+                <h4>VASO DE CHÃO </h4>
+                <p class="p-1">R$200,00</p>
+            </div>
+        </div>
+        <div class="card">
+                <img class="icons" src="img/180_amaryllis_tosca_branco_vermelho_cartela_com_1_bulbo_1836_1_20190521161851.webp">
+            <div class="auto-card">
+                <h4>AMARYLLIS TOSCA</h4>
+                <p class="p-1">R$100,00</p>
+            </div>
+        </div>
+        <div class="card">
+                <img class="icons" src="img/unnamed (1).jpg">
+            <div class="auto-card">
+                <h4>VASO DE CHÃO </h4>
+                <p class="p-1">R$200,00</p>
+            </div>
+        </div>
+    </div>  
+<section id="pag-ENCOMENDAS">    
+        <h2>Encomendas</h2>
+        <p>Loja aberta das 9h as 18h.</p>
+    <form method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" size="50" placeholder="Nome Completo">
+        <br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email"  size="50" placeholder="nome@email.com"/>
+        <br>
+            <label for="Produto">Produto:</label><br>
+        <select name="Produto" id="Produto">
+                <option value="selecione">selecione</option>
+                <option value="Fertilizante">Fertilizante</option>
+                <option value="buque de flor">buque de flor</option>
+                <option value="vaso de planta">vaso de planta</option>
+        </select>
+        <br>
+            <label for="Quantidade">Quantidade:</label><br>
+            <input type="number" id="Quantidade"  size="90" min="1" max="100" step="1"/>
+        <br>
+            <label for="Forma de Retirada">Forma de Retirada:</label><br>
+        <fieldset>
+            <input type="radio" id="Delivery" name="gender" value="Delivery">
+            <label for="Delivery">Delivery</label><br>
+            <input type="radio" id="Retira no Local" name="gender" value="Retira no Local">
+            <label for="Retira no Local">Retira no Local</label><br>
+        </fieldset>
+            <label for="Comentarios">Comentarios:</label><br>
+            <textarea id="Comentarios" name="Comentarios" rows="3" cols="80"></textarea>
+        <br>
+        <div id="buttons">
+            <input type="submit" value="ENCOMENDAR" >
+            <input type="reset" value="CANCELAR" >
+        </div>        
+    </form>
+</section>
+    <footer>
+        <p>Desenvolvido por <b><a href="https://www.instagram.com/hebert_viniciuss/" target="_blank">Hebert Souza</a></b> - 2021</p>
+    </footer>
+</body>
+</html>
